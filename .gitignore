@@ -1,0 +1,6 @@
+# auto-generated files
+sculpin.lock
+.sculpin/
+components/
+output_dev/
+output_prod/
