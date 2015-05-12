@@ -24,6 +24,10 @@ If you want to contribute, you should set up the docs locally so you can edit th
 
 5. Hit up `http://localhost:8000/` in your browser to view the documentation. Changes you make will be automatically recompiled back into the local site.
 
+For a production site, use this command:
+
+    sculpin generate --env=prod
+
 
 ## Editing
 
