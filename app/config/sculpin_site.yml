@@ -1,3 +1,18 @@
 
 title: Question2Answer
-subTitle: Free and open source platform for Q&A sites.
+subTitle: Free and open source platform for Q&A sites
+
+menu:
+    items:
+        home:
+            text: Intro
+            url: /
+        install:
+            text: Install
+            url: /install/installation/
+        config:
+            text: Configuration
+            url: /install/config/
+        plugin-metadata:
+            text: Plugin Metadata
+            url: /plugins/metadata/

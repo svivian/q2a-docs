@@ -1,6 +1,2 @@
 {
-    "require": {
-        "components/bootstrap": "~2.3.1",
-        "components/jquery": "~1.11"
-    }
 }

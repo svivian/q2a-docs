@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>{{ page.title }} - {{ site.title }}</title>
+
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="{{ site.url }}/_static/css/main.css">
+</head>
+<body>
+
+	<header class="navbar navbar-default navbar-fixed-top">
+
+		<a class="navbar-brand" href="{{ baseUrl }}/">
+			{{ site.title|default('The title') }}
+			<small class="hidden-xs hidden-sm">
+				{{ site.subTitle|default('') }}
+			</small>
+		</a>
+
+	</header>
+
+	<main class="{{ site.menu ? 'container-fluid' : 'container' }}">
+		<div class="row">
+
+			{% if site.menu is defined %}
+
+				<nav id="sidebar" class="col-sm-3 col-lg-2" role="navigation">
+
+					<ul class="nav nav-pills nav-stacked">
+						{% for itemId, item in site.menu.items %}
+							<li class="{{ itemId == page.currentMenu ? 'active' }}">
+								<a href="{{ site.url }}{{ item.url }}">
+									{{ item.text|raw }}
+								</a>
+							</li>
+						{% endfor %}
+					</ul>
+
+				</nav>
+
+			{% endif %}
+
+			<section id="content" class="{{ site.menu ? 'col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10' : 'col-sm-12' }}">
+				{% block content %}{% endblock%}
+			</section>
+
+		</div>
+	</main>
+
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script src="{{ site.url }}/_static/js/prism.js"></script>
+
+</body>
+</html>
