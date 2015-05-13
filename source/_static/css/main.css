@@ -53,6 +53,16 @@ section {
     }
 }
 
+/* make nested menu smaller, hide by default */
+.nav .nav {
+    display: none;
+    margin-left: 20px;
+    font-size: 90%;
+}
+.active .nav, .subactive .nav {
+    display: block;
+}
+
 /*@media (max-width: 960px) {
     body {
         font-size: 17px;

@@ -29,17 +29,28 @@
 			{% if site.menu is defined %}
 
 				<nav id="sidebar" class="col-sm-3 col-lg-2" role="navigation">
-
 					<ul class="nav nav-pills nav-stacked">
-						{% for itemId, item in site.menu.items %}
-							<li class="{{ itemId == page.currentMenu ? 'active' }}">
-								<a href="{{ site.url }}{{ item.url }}">
-									{{ item.text|raw }}
-								</a>
-							</li>
-						{% endfor %}
-					</ul>
+					{% for itemId, item in site.menu.items %}
+						<li class="{{ itemId == page.currentMenu ? 'active' }} {{ itemId == page.parentMenu ? 'subactive' }}">
+							<a href="{{ site.url }}{{ item.url }}">
+								{{ item.text|raw }}
+							</a>
+							{# sub-menu #}
+							{% if item.subitems is defined %}
+								<ul class="nav nav-pills nav-stacked">
+								{% for subitemId, subitem in item.subitems %}
+									<li class="{{ subitemId == page.currentMenu ? 'active' }}">
+										<a href="{{ site.url }}{{ subitem.url }}">
+											{{ subitem.text|raw }}
+										</a>
+									</li>
+								{% endfor %}
+								</ul>
+							{% endif %}
 
+						</li>
+					{% endfor %}
+					</ul>
 				</nav>
 
 			{% endif %}

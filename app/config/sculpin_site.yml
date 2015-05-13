@@ -9,7 +9,20 @@ menu:
             url: /
         install:
             text: Install
-            url: /install/installation/
+            url: /install/basic/
+            subitems:
+                wordpress:
+                    text: Wordpress
+                    url: /install/wordpress/
+                sso:
+                    text: Single Sign-On
+                    url: /install/single-sign-on/
+                optimization:
+                    text: Optimization
+                    url: /install/optimization/
+                security:
+                    text: Security
+                    url: /install/security/
         config:
             text: Configuration
             url: /install/config/
