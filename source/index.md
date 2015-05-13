@@ -5,64 +5,40 @@ currentMenu: home
 
 # Question2Answer documentation
 
-See the menu to the left to get started!
+**Question2Answer (Q2A) is a popular free open source Q&A platform for PHP/MySQL, used by over 16,000 sites in 40 languages.**
 
+Q2A is highly customisable with many awesome features:
 
+- Asking and answering questions (duh!)
+- Voting, comments, follow-on and closed questions.
+- Complete user management including points-based reputation management.
+- Create experts, editors, moderators and admins.
+- Fast integrated search engine.
+- Categories (up to 4 levels deep) and/or tagging.
+- Easy styling with CSS themes.
+- Supports translation into any language.
+- Custom sidebar, widgets, pages and links.
+- SEO features such as neat URLs, microformats and XML Sitemaps.
+- RSS, email notifications and personal news feeds.
+- User avatars (or Gravatar) and custom fields.
+- Private messages and public wall posts.
+- Log in via Facebook or others (using plugins).
+- Out-of-the-box WordPress 3+ integration.
+- Custom single sign-on support for other sites.
+- PHP/MySQL scalable to millions of users and posts.
+- Safe from XSS, CSRF and SQL injection attacks.
+- Beat spam with captchas, rate-limiting, moderation and/or flagging.
+- Block users, IP addresses, and censor words
 
-Test code block:
+Q2A also features an extensive plugin system:
 
-```language-php
-define('QA_VERSION', '1.7.0-beta-2'); // also used as suffix for .js and .css requests
-define('QA_BUILD_DATE', '2014-12-06');
-
-
-/**
- * Autoloads some Q2A classes so it's possible to use them without adding a require_once first. From version 1.7 onwards.
- * These loosely follow PHP-FIG's PSR-0 standard where faux namespaces are separated by underscores. This is being done
- * slowly and carefully to maintain backwards compatibility, and does not apply to plugins, themes, nor most of the core
- * for that matter.
- *
- * Classes are stored in the qa-include/Q2A folder, and then in subfolders depending on their categorization.
- * Class names should be of the form Q2A_Namespace_Class, e.g. Q2A_Util_Debug. There may be multiple "namespaces".
- * Classes are mapped to PHP files with the underscores converted to directory separators. The Q2A_Util_Debug class is in
- * the file qa-include/Q2A/Util/Debug.php. A class named Q2A_Db_User_Messages would be in a file qa-include/Q2A/Db/User/Messages.php.
- */
-function qa_autoload($class)
-{
-	if (strpos($class, 'Q2A_') === 0)
-		require QA_INCLUDE_DIR.strtr($class, '_', '/') . '.php';
-}
-spl_autoload_register('qa_autoload');
-```
-
-Test HTML block
-
-```language-markup
-<!DOCTYPE html>
-<html>
-	<!-- Powered by Question2Answer - http://www.question2answer.org/ -->
-	<head>
-		<meta charset="utf-8">
-		<title>Recent questions - Question2Answer</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="./qa-theme/SnowFlat/qa-styles.css?1.7.0-beta-2">
-		<script>
-		var qa_root = '.\/';
-		var qa_request = 'questions';
-		</script>
-		<script src="./qa-content/jquery-1.11.1.min.js"></script>
-		<script src="./qa-content/qa-page.js?1.7.0-beta-2"></script>
-		<script src="./qa-theme/SnowFlat/js/snow-core.js?1.7.0-beta-2"></script>
-	</head>
-
-	<body class="qa-template-questions qa-body-js-off">
-		<div class="qa-body-wrapper">
-			<div class="qa-main-wrapper">
-				<div class="qa-main">
-					<h1>Recent questions</h1>
-				</div>
-			</div>
-		</div>
-	</body>
-</html>
-```
+- Modify the HTML output for a page with *layers*.
+- Add custom pages to a Q2A site with *page modules*.
+- Add extra content in various places with *widget modules*.
+- Allow login via an external identity provider such as Facebook with *login modules*.
+- Integrate WYSIWYG or other text editors with *editor/viewer modules*.
+- Do something when certain actions take place with *event modules*.
+- Validate and/or modify many types of user input with *filter modules*.
+- Implement a custom search engine with *search modules*.
+- Add extra spam protection with *captcha modules*.
+- Extend many core Q2A functions using *function overrides*.
