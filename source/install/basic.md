@@ -7,6 +7,8 @@ currentMenu: install
 
 Question2Answer takes 5 minutes (or less!) to install. In most cases, installing Question2Answer for your website should be dead easy. Please follow the steps below.
 
+
+
 ## Before you install Question2Answer
 
 Make sure you have:
@@ -46,7 +48,7 @@ The instructions below are for installing Question2Answer where it manages user 
 
 4. Create a MySQL database, and a MySQL user with full permissions for that database.
 
-    <small>If you're interested, the [privileges](http://dev.mysql.com/doc/mysql/en/privilege-system.html) actually needed are: CREATE, ALTER, DELETE, INSERT, SELECT, UPDATE, LOCK TABLES</small>
+	<small>If you're interested, the [privileges](http://dev.mysql.com/doc/mysql/en/privilege-system.html) actually needed are: CREATE, ALTER, DELETE, INSERT, SELECT, UPDATE, LOCK TABLES</small>
 
 5. Note down the MySQL details: username, password, database name and server host name. If MySQL is running on the same server as your website, the server host name is likely to be `127.0.0.1` or `localhost`.
 
@@ -56,15 +58,15 @@ The instructions below are for installing Question2Answer where it manages user 
 
 8. Place all the Question2Answer files (**including .htaccess**) in the appropriate location on your web server:
 
-    - To serve Question2Answer at the root of a domain (e.g. `http://www.mysite.com/`), move or upload all the contents of the unzipped `question2answer` folder into the root directory for that domain on your web server.
+	- To serve Question2Answer at the root of a domain (e.g. `http://www.mysite.com/`), move or upload all the contents of the unzipped `question2answer` folder into the root directory for that domain on your web server.
 
-    - To serve Question2Answer in a subdirectory of a site (e.g. `http://www.mysite.com/qa/`), create the subdirectory inside the root directory for the site, then move or upload all the contents of the unzipped `question2answer` folder into this subdirectory.
+	- To serve Question2Answer in a subdirectory of a site (e.g. `http://www.mysite.com/qa/`), create the subdirectory inside the root directory for the site, then move or upload all the contents of the unzipped `question2answer` folder into this subdirectory.
 
 9. Open the appropriate web page for Question2Answer in your web browser, for example:
 
-    - If you installed Question2Answer at the root of a domain, `http://www.mysite.com/`
+	- If you installed Question2Answer at the root of a domain, `http://www.mysite.com/`
 
-    - If you installed Question2Answer in a subdirectory, `http://www.mysite.com/qa/`
+	- If you installed Question2Answer in a subdirectory, `http://www.mysite.com/qa/`
 
 10. Follow the on-screen instructions to set up your database and administrator account. That's it!
 
@@ -84,9 +86,9 @@ The instructions below are for upgrading from a previous version of Question2Ans
 
 5. Replace all the Question2Answer files and directories (**including .htaccess**) on your web server with the new ones.
 
-    - Your custom `qa-config.php` file will not be affected, nor will your `qa-external` directory.
+	- Your custom `qa-config.php` file will not be affected, nor will your `qa-external` directory.
 
-    - You will need to reapply any other changes and reinstall any themes, languages or plugins as appropriate.
+	- You will need to reapply any other changes and reinstall any themes, languages or plugins as appropriate.
 
 6. Open the page for Question2Answer in your browser, and look around the admin center. If appropriate, you will be prompted to upgrade the database, so follow the on-screen instructions. You've now successfully upgraded - congratulations!
 

@@ -2,85 +2,66 @@
 /*** MAIN ***/
 
 body {
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #404040;
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #404040;
 }
 h1 {
-    padding-bottom: 8px;
-    border-bottom: 1px solid #e4e4e4;
+	padding-bottom: 8px;
+	border-bottom: 1px solid #e4e4e4;
 }
 h1, h2, h3, h4, h5, h6 {
-    line-height: 1.2;
-    color: #000;
+	line-height: 1.2;
+	color: #000;
 }
 pre, pre > code {
-    background: #444;
-    color: #e6e6e6;
+	background: #444;
+	color: #e6e6e6;
 }
 code {
-    color: #595;
-    background-color: #eee;
+	color: #595;
+	background-color: #eee;
 }
 
 @media (min-width: 1200px) {
-    .container {
-        width: 970px;
-    }
+	.container {
+		width: 970px;
+	}
 }
 main {
-    margin-top: 90px;
+	margin-top: 90px;
 }
 section {
-    margin-bottom: 120px;
+	margin-bottom: 120px;
 }
 .navbar .navbar-brand {
-    font-size: 28px;
-    height: auto;
-    line-height: 40px;
-    margin-left: 20px;
+	font-size: 28px;
+	height: auto;
+	line-height: 40px;
+	margin-left: 20px;
 }
 .navbar .navbar-brand small {
-    font-size: 18px;
-    font-weight: 300;
-    margin-left: 10px;
+	font-size: 18px;
+	font-weight: 300;
+	margin-left: 10px;
 }
 @media (min-width: 768px) {
-    #sidebar {
-        position:fixed;
-        margin-top: 30px;
-    }
+	#sidebar {
+		position:fixed;
+		margin-top: 30px;
+	}
 }
 
 /* make nested menu smaller, hide by default */
 .nav .nav {
-    display: none;
-    margin-left: 20px;
-    font-size: 90%;
+	display: none;
+	margin-left: 20px;
+	font-size: 90%;
 }
 .active .nav, .subactive .nav {
-    display: block;
+	display: block;
 }
-
-/*@media (max-width: 960px) {
-    body {
-        font-size: 17px;
-    }
-    pre {
-        font-size: 12px;
-    }
-}
-
-pre {
-    padding: 0;
-    border-radius: 4px;
-    margin: 15px;
-    font-size: 15px;
-}
-pre code {
-    border: none;
-}*/
 
 
 
@@ -91,70 +72,70 @@ pre code {
 
 code[class*="language-"],
 pre[class*="language-"] {
-    color: #e6e6e6;
-    /*text-shadow: 0 1px rgba(0, 0, 0, 0.3);*/
-    font-family: Consolas, Monaco, 'Andale Mono', monospace;
-    direction: ltr;
-    text-align: left;
-    white-space: pre;
-    word-spacing: normal;
-    word-break: normal;
-    line-height: 1.5;
+	color: #e6e6e6;
+	/*text-shadow: 0 1px rgba(0, 0, 0, 0.3);*/
+	font-family: Consolas, Monaco, 'Andale Mono', monospace;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	line-height: 1.5;
 
-    -moz-tab-size: 4;
-    -o-tab-size: 4;
-    tab-size: 4;
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
 
-    -webkit-hyphens: none;
-    -moz-hyphens: none;
-    -ms-hyphens: none;
-    hyphens: none;
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
 }
 
 /* Code blocks */
 pre[class*="language-"] {
-    padding: 1em;
-    margin: .5em 0;
-    overflow: auto;
-    border-radius: 0.3em;
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
 }
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-    background: #444;
+	background: #444;
 }
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
-    padding: .1em;
-    border-radius: .3em;
+	padding: .1em;
+	border-radius: .3em;
 }
 
 .token.comment,
 .token.prolog,
 .token.doctype,
 .token.cdata {
-    color: #888;
+	color: #888;
 }
 
 .token.punctuation {
-    color: #e6e6e6;
+	color: #e6e6e6;
 }
 
 .namespace {
-    opacity: .7;
+	opacity: .7;
 }
 
 .token.tag,
 .token.constant,
 .token.symbol,
 .token.deleted {
-    color: #f92672;
+	color: #f92672;
 }
 
 .token.boolean,
 .token.number {
-    color: #ae81ff;
+	color: #ae81ff;
 }
 
 .token.selector,
@@ -163,7 +144,7 @@ pre[class*="language-"] {
 .token.char,
 .token.builtin,
 .token.inserted {
-    color: #aacc66;
+	color: #aacc66;
 }
 
 .token.property,
@@ -173,34 +154,34 @@ pre[class*="language-"] {
 .language-css .token.string,
 .style .token.string,
 .token.variable {
-    color: #e6e6e6;
+	color: #e6e6e6;
 }
 
 .token.atrule,
 .token.attr-value {
-    color: #e6db74;
+	color: #e6db74;
 }
 
 .token.variable {
-    color: #c0c0c0;
+	color: #c0c0c0;
 }
 .token.function {
-    color: #66d9ef;
+	color: #66d9ef;
 }
 .token.keyword {
-    color: #efa666;
+	color: #efa666;
 }
 
 .token.regex,
 .token.important {
-    color: #fd971f;
+	color: #fd971f;
 }
 
 .token.important {
-    font-weight: bold;
+	font-weight: bold;
 }
 
 .token.entity {
-    cursor: help;
+	cursor: help;
 }
 
