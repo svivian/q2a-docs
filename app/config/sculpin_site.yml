@@ -23,9 +23,31 @@ menu:
                 security:
                     text: Security
                     url: /install/security/
+        translate:
+            text: Translate
+            url: /translate/
+        themes:
+            text: Themes
+            url: /themes/
+        plugins:
+            text: Plugins
+            url: /plugins/overview/
+            subitems:
+                metadata:
+                    text: Plugin Metadata
+                    url: /plugins/metadata/
+                page:
+                    text: Page Plugins
+                    url: /install/page/
+                login:
+                    text: Login Plugins
+                    url: /install/login/
+                editor:
+                    text: Editor Plugins
+                    url: /install/editor/
+                viewer:
+                    text: Viewer Plugins
+                    url: /install/viewer/
         config:
             text: Configuration
             url: /install/config/
-        plugin-metadata:
-            text: Plugin Metadata
-            url: /plugins/metadata/
